@@ -95,6 +95,14 @@ Using Django Form Designer with Django CMS
 
 You can now add forms to pages created with Django CMS. 
 
+**Update**:
+If you would like to use the redirect function of the Form Designer in the CMS plugin, add 
+the following middleware class to your settings::
+        
+        MIDDLEWARE_CLASSES = (
+            ...
+            'form_designer.contrib.force_response.ForceResponseMiddleware',
+        )
 
 Optional requirements
 =====================
